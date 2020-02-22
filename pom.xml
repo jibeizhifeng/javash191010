@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.atguigu.scw</groupId>
+  <artifactId>scw-common</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>scw-common</name>
+  <description>尚筹网-公共模块:通用类</description>
+  
+  <dependencies>
+  
+	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<!-- SpringBoot框架引用版本就是1.18.4 -->
+		<version>1.18.4</version>
+	</dependency>
+
+	<!-- 引入阿里云OSS SDK的依赖 -->
+	<dependency>
+	    <groupId>com.aliyun.oss</groupId>
+	    <artifactId>aliyun-sdk-oss</artifactId>
+	    <version>3.8.0</version>
+	</dependency>
+
+	<!-- OSS需要上传文件，引入网络请求的java的工具HttpClient -->
+	<dependency>	
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpclient</artifactId>
+	    <version>4.2.1</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpcore</artifactId>
+	    <version>4.2.1</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+	<dependency>
+	    <groupId>com.alibaba</groupId>
+	    <artifactId>fastjson</artifactId>
+	    <version>1.2.62</version>
+	</dependency>	
+
+	<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
+	<dependency>
+	    <groupId>org.springframework.data</groupId>
+	    <artifactId>spring-data-redis</artifactId>
+	    <version>2.1.5.RELEASE</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+  </dependencies>
+  
+</project>
